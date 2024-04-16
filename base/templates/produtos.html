@@ -1,0 +1,422 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<div class="products-grid">
+  <h2 id="Camisetas"> Produtos</h2>
+  <div class="products-grid-container">
+    <div class="products-grid-card">
+      <div class="products-grid-card"
+        onclick="openModal('../static/admin/img/Camiseta_Fem_Front.jpg', '../static/admin/img/Camiseta_Fem_Back.jpg')">
+
+        <div class="flip-card" onmouseover="flipCard(this)" onmouseout="resetFlip(this)">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="../static/admin/img/Camiseta_Fem_Front.jpg" alt="Produto 1 Front" />
+            </div>
+            <div class="flip-card-back">
+              <img src="../static/admin/img/Camiseta_Fem_Back.jpg" alt="Produto 1 Back" />
+            </div>
+          </div>
+        </div>
+
+        <p class="category">Camisetas</p>
+        <h3 class="product-name">Camiseta Tradicional Rosa</h3>
+        <p class="product-price">R$ 69,99</p>
+
+
+        <button class="btn btn-comprar" 
+        data-id="1" 
+        data-nome="Camiseta Tradicional Rosa" 
+        data-preco="69.99"
+        data-imagem-front="../static/admin/img/Camiseta_Fem_Front.jpg"
+        data-imagem-back="../static/admin/img/Camiseta_Fem_Back.jpg">Comprar</button>
+
+      </div>
+    </div>
+    <div id="myModal" class="modal" onclick="closeModal()">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImageFront" src="" alt="Imagem do Produto - Front">
+        <img id="modalImageBack" src="" alt="Imagem do Produto - Back">
+      </div>
+    </div>
+
+    <div class="products-grid-card">
+      <div class="products-grid-card"
+        onclick="openModal('../static/admin/img/camiset_Preta_Masc_front.jpg', '../static/admin/img/camiset_preta_back.jpg')">
+
+        <div class="flip-card" onmouseover="flipCard(this)" onmouseout="resetFlip(this)">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="../static/admin/img/camiset_Preta_Masc_front.jpg" alt="Produto 1 Front" />
+            </div>
+            <div class="flip-card-back">
+              <img src="../static/admin/img/camiset_preta_back.jpg" alt="Produto 1 Back" />
+            </div>
+          </div>
+        </div>
+
+        <p class="category">Camisetas</p>
+        <h3 class="product-name">Camiseta Tradicional Preta</h3>
+        <p class="product-price">R$ 69,99</p>
+
+        <button class="btn btn-comprar" 
+        data-id="2" 
+        data-nome="Camiseta Tradicional Preta" 
+        data-preco="69.99"
+        data-imagem-front="../static/admin/img/camiset_Preta_Masc_front.jpg"
+        data-imagem-back="../static/admin/img/camiset_preta_back.jpg">Comprar</button>
+      </div>
+    </div>
+    <div id="myModal" class="modal" onclick="closeModal()">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImageFront" src="" alt="Imagem do Produto - Front">
+        <img id="modalImageBack" src="" alt="Imagem do Produto - Back">
+      </div>
+    </div>
+
+
+    <div class="products-grid-card">
+      <div class="products-grid-card"
+        onclick="openModal('../static/admin/img/Camiseta_Fé_Azul_front.jpg', '../static/admin/img/Camiseta_Fé_Azul_Back.jpg')">
+
+        <div class="flip-card" onmouseover="flipCard(this)" onmouseout="resetFlip(this)">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="../static/admin/img/Camiseta_Fé_Azul_front.jpg" alt="Produto 1 Front" />
+            </div>
+            <div class="flip-card-back">
+              <img src="../static/admin/img/Camiseta_Fé_Azul_Back.jpg" alt="Produto 1 Back" />
+            </div>
+          </div>
+        </div>
+
+        <p class="category">Camisetas</p>
+        <h3 class="product-name">Camiseta D'fé azul</h3>
+        <p class="product-price">R$ 69,99</p>
+
+        <button class="btn btn-comprar" 
+        data-id="3" 
+        data-nome="Camiseta Tradicional Preta" 
+        data-preco="69.99"
+        data-imagem-front="../static/admin/img/Camiseta_Fé_Azul_front.jpg"
+        data-imagem-back="../static/admin/img/Camiseta_Fé_Azul_Back.jpg">Comprar</button>
+      </div>
+    </div>
+    <div id="myModal" class="modal" onclick="closeModal()">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImageFront" src="" alt="Imagem do Produto - Front">
+        <img id="modalImageBack" src="" alt="Imagem do Produto - Back">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="products-grid">
+  <div class="products-grid-container">
+    <div id="myModal" class="modal" onclick="closeModal()">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImageFront" src="" alt="Imagem do Produto - Front">
+        <img id="modalImageBack" src="" alt="Imagem do Produto - Back">
+      </div>
+    </div>
+    <div class="products-grid-card">
+      <div class="products-grid-card"
+        onclick="openModal('../static/admin/img/Moletons/Molet_Branc_Fe_Femin_front.jpg', '../static/admin/img/Moletons/Molet_Branc_Fe_Femin_Back.jpg')">
+
+        <div class="flip-card" onmouseover="flipCard(this)" onmouseout="resetFlip(this)">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="../static/admin/img/Moletons/Molet_Branc_Fe_Femin_front.jpg" alt="Produto 1 Front" />
+            </div>
+            <div class="flip-card-back">
+              <img src="../static/admin/img/Moletons/Molet_Branc_Fe_Femin_Back.jpg" alt="Produto 1 Back" />
+            </div>
+          </div>
+        </div>
+
+        <p class="category">Moletom</p>
+        <h3 class="product-name">Moletom Tradicional Preto</h3>
+        <p class="product-price">R$ 199,00</p>
+
+        <button class="btn btn-comprar">Comprar</button>
+      </div>
+      </div>
+    </div>
+    <div class="products-grid-card">
+      <div class="products-grid-card"
+        onclick="openModal('')">
+
+        <div class="flip-card" onmouseover="flipCard(this)" onmouseout="resetFlip(this)">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="../static/admin/img/Moletons/Molet_pret_front.jpg" alt="Produto 1 Front" />
+            </div>
+            <div class="flip-card-back">
+              <img src="../static/admin/img/Moletons/Molet_pret_Back.jpg" alt="Produto 1 Back" />
+            </div>
+          </div>
+        </div>
+
+        <p class="category">Moletom</p>
+        <h3 class="product-name">Moletom Tradicional Preto</h3>
+        <p class="product-price">R$ 199,00</p>
+
+        <button class="btn">Comprar</button>
+      </div>
+    </div>
+    <div class="products-grid-card">
+      <div class="products-grid-card"
+        onclick="openModal('/Imagens_Galeriaexemplos/Moletons/Molet_Branc_front.jpg', '/Imagens_Galeriaexemplos/Moletons/Molet_Branc_Back.jpg')">
+
+        <div class="flip-card" onmouseover="flipCard(this)" onmouseout="resetFlip(this)">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="../static/admin/img/Moletons/Molet_Branc_front.jpg" alt="Produto 1 Front" />
+            </div>
+            <div class="flip-card-back">
+              <img src="../static/admin/img/Moletons/Molet_Branc_Back.jpg" alt="Produto 1 Back" />
+            </div>
+          </div>
+        </div>
+
+        <p class="category">Moletom</p>
+        <h3 class="product-name">Moletom Tradicional Preto</h3>
+        <p class="product-price">R$ 199,00</p>
+        <button class="btn">Comprar</button>
+      </div>
+    </div>
+    <div id="myModal" class="modal" onclick="closeModal()">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImageFront" src="" alt="Imagem do Produto - Front">
+        <img id="modalImageBack" src="" alt="Imagem do Produto - Back">
+      </div>
+    </div>
+   
+    <div id="myModal" class="modal" onclick="closeModal()">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImageFront" src="" alt="Imagem do Produto - Front">
+        <img id="modalImageBack" src="" alt="Imagem do Produto - Back">
+      </div>
+    </div>
+
+  </div>
+  <div>
+    <a href="/Galeria/Produto/index.html">
+      <button class="ver-mais-btn">Ver Mais</button>
+    </a>
+  </div>
+</div>
+<div class="products-grid">
+  <div class="products-grid-container">
+    <object type="text/html" data="/carousel2.html" width="100%" height="500em"></object>
+  </div>
+  <div>
+    <a href="/Galeria/Galeria.html">
+      <button class="ver-mais-btn">Ver Mais</button>
+    </a>
+  </div>
+</div>
+
+<div class="newsletter-container">
+
+  <div class="social-media">
+    <a href="https://www.facebook.com/gabriel.gabeee" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/fucaderas_054/" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="chat.whatsapp.com/K4fWlCDnVX4LlODh41GW3k" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+  </div>
+</div>
+
+
+
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-top-about">
+      <h3 id="+ Informações">Sobre</h3>
+      <p>
+        Bem-vindo à Fuçaderas_054, o seu destino definitivo para as mais emocionantes e potentes motos alteradas.
+        Fundada em 2022, somos apaixonados por proporcionar uma experiência de pilotagem única,
+        onde a potência encontra a personalização.
+      </p>
+      <p>
+        <i class="fas fa-location-arrow"></i>
+        <a href="#">Rua Sandro Tonietto,1995</a>
+      </p>
+      <p>
+        <i class="fas fa-phone"></i>
+        <a href="#">(54)99946-4972</a>
+      </p>
+      <p>
+        <i class="far fa-envelope"></i>
+        <a href="#">nicolas.macedof10@gmail.com</a>
+      </p>
+    </div>
+    <div class="footer-top-categories">
+      <h3>Produtos</h3>
+      <ul>
+        <li>
+          <a href="">Camisetas</a>
+        </li>
+        <li>
+          <a href="#">Jaquetas</a>
+        </li>
+        <li>
+          <a href="#">Moletons</a>
+        </li>
+        <li>
+          <a href="#">Adesivos</a>
+        </li>
+        <li>
+          <a href="#">Combos</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-top-information">
+      <h3>Informações</h3>
+      <ul>
+        <li>
+          <a href="#">Entre em contato</a>
+        </li>
+        <li>
+          <a href="#">Política de privacidade</a>
+        </li>
+        <li>
+          <a href="#">Pedidos e devoluções</a>
+        </li>
+        <li>
+          <a href="#">termos e condições</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-top-menu">
+      <h3>Menu</h3>
+      <ul>
+        <li>
+          <a href="#">Minha Conta</a>
+        </li>
+        <li>
+          <a href="#">Carrinho</a>
+        </li>
+        <li>
+          <a href="#">Lista de Desejos</a>
+        </li>
+        <li>
+          <a href="#">Rastrear Pedido</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-bottom-payments">
+      <i class="fab fa-cc-mastercard"></i>
+      <i class="fab fa-cc-visa"></i>
+      <i class="fab fa-cc-diners-club"></i>
+      <i class="fab fa-cc-amazon-pay"></i>
+      <i class="fab fa-cc-apple-pay"></i>
+    </div>
+    <p>Desenvolvido por <a href="https://www.instagram.com/_nicoolass/">@_nicoolass</p>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script>
+  // Inicialize o carousel ao carregar a página
+  document.addEventListener('DOMContentLoaded', function () {
+    var myCarousel = new bootstrap.Carousel(document.getElementById('carouselExampleSlidesOnly'), {
+      interval: 2000, // Defina o intervalo de transição em milissegundos (opcional)
+      wrap: true, // Permita a transição de volta ao primeiro slide após o último (opcional)
+    });
+  });
+  function openModal(imageSrcFront, imageSrcBack) {
+    var modal = document.getElementById('myModal');
+    var modalImageFront = document.getElementById('modalImageFront');
+    var modalImageBack = document.getElementById('modalImageBack');
+
+    modalImageFront.src = imageSrcFront;
+    modalImageBack.src = imageSrcBack;
+    modal.style.display = 'block';
+  }
+
+  function closeModal() {
+    var modal = document.getElementById('myModal');
+    modal.style.display = 'none';
+  }
+
+  function openImageModal(imageSrc) {
+    var modal = document.getElementById('imageModal');
+    var modalImage = document.getElementById('modalImage');
+
+    modalImage.src = imageSrc;
+    modal.style.display = 'block';
+  }
+
+  function closeImageModal() {
+    var modal = document.getElementById('imageModal');
+    modal.style.display = 'none';
+  }
+
+  function flipCard(card) {
+    var flipCardInner = card.querySelector('.flip-card-inner');
+    flipCardInner.style.transform = 'rotateY(180deg)';
+  }
+
+  function resetFlip(card) {
+    var flipCardInner = card.querySelector('.flip-card-inner');
+    flipCardInner.style.transform = 'rotateY(0deg)';
+  }
+
+  $(document).ready(function() {
+      $('.btn-comprar').click(function() {
+          var nome = $(this).data('nome');
+          var preco = $(this).data('preco');
+          var imagemFront = $(this).data('imagem-front');
+          var imagemBack = $(this).data('imagem-back');
+
+          // Enviar os dados para a view Django via AJAX
+          $.ajax({
+              url: '/adicionar-produto/',
+              method: 'POST',
+              data: {
+                  nome: nome,
+                  preco: preco,
+                  imagem_front: imagemFront,
+                  imagem_back: imagemBack,
+                  csrfmiddlewaretoken: '{{ csrf_token }}'
+              },
+              success: function(response) {
+                  alert(response.message); // Exibe uma mensagem de sucesso
+                
+                  // Atualiza a quantidade no carrinho
+                  var qtyElement = $('.wishlist-container .qty');
+                  var currentQty = parseInt(qtyElement.text());
+                  qtyElement.text(currentQty + 1);
+              },
+              error: function(xhr, errmsg, err) {
+                  console.log(xhr.status + ": " + xhr.responseText);
+                  // Lida com erros, se houver
+              }
+          });
+      });
+  });
+
+
+</script>
+{% endblock content %}
